@@ -20,8 +20,8 @@ import {PublicHolidayServiceModule} from './services/public-holiday.service-modu
   }, {path: 'crypto', component: CryptoComponent}, {
     path: 'public-holiday',
     component: PublicHolidayComponent
-  }, {
-    path: 'checkbox-list',
+  }, {path: 'checkbox-list', component: CategoriesListComponent}, {
+    path: 'categories-menu',
     component: CategoriesListComponent
   }]), ProductListComponentModule, ProductsServiceModule, CategoriesListComponentModule, CategoriesListServiceModule, CryptoComponentModule, CryptoServiceModule, PublicHolidayComponentModule, PublicHolidayServiceModule],
   exports: [RouterModule]
