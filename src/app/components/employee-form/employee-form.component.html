@@ -1,0 +1,26 @@
+<form (ngSubmit)="onEmployeeFormSubmitted(employeeForm)" [formGroup]="employeeForm">
+  <div>
+    <mat-form-field appearance="fill">
+      <mat-label>Name</mat-label>
+      <input formControlName="name" matInput placeholder="Name" required type="text">
+      <mat-error *ngIf="employeeForm.get('name')!.invalid">name is invalid</mat-error>
+    </mat-form-field>
+  </div>
+  <div>
+    <mat-form-field appearance="fill">
+      <mat-label>Salary</mat-label>
+      <input formControlName="salary" matInput placeholder="Salary" required type="text">
+      <mat-error *ngIf="employeeForm.get('salary')!.invalid">salary is invalid</mat-error>
+    </mat-form-field>
+  </div>
+  <div>
+    <mat-form-field appearance="fill">
+      <mat-label>Age</mat-label>
+      <input formControlName="age" matInput placeholder="Age" required type="text">
+      <mat-error *ngIf="employeeForm.get('age')!.invalid">age is invalid</mat-error>
+    </mat-form-field>
+  </div>
+  <div>
+    <button color="primary" mat-raised-button type="submit">Submit</button>
+  </div>
+</form>
